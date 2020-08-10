@@ -1,0 +1,80 @@
+.so_me{
+  background-color: $baby-green;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.so_me_text, .facebook p, .youtube p{
+  color: $dark-green-text;
+  font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+}
+.so_me_text{
+  h5{
+    font-size: 1.3rem;
+    border-bottom: 1px solid $grey;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+    @include min-screen(1080px){
+      width: 230px;
+    }
+  }
+  p{
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  
+}
+.so_me_flex{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @include min-screen(1080px){
+    width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.so_me_icons{
+  display: flex;
+  flex-direction: row;
+}
+.facebook{
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+.youtube{
+  display: flex;
+  flex-direction: column;
+}
+
+/* social icons */
+
+.fa {
+  padding: 16px;
+  font-size: 16px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+  color: $white;
+}
+.fa-facebook {
+  background: $dark-green-text;
+  color: $baby-green;
+  align-self: center;
+}
+.fa-facebook:hover {
+  background: $facebook-blue;
+}
+.fa-youtube {
+  background: $dark-green-text;
+  color: $baby-green;
+  align-self: center;
+}
+.fa-youtube:hover{
+  background: $youtube-red;
+}

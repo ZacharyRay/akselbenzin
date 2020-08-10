@@ -1,0 +1,44 @@
+.hero_info_wrapper {
+   width: 100%;
+   .hero_info_image {
+     background-repeat: no-repeat;
+     height: 500px;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+   }
+ }
+
+.info_text_wrapper {
+  margin: 10px;
+}
+.info_text{
+  @include min-screen(1080px) {
+    width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-right: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid $underline;
+  a{
+    color: $logo-color;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a:hover{
+    color: $black;
+  }
+}
+.small_images{
+  @include min-screen(1080px){
+    margin-left: auto;
+    margin-right: auto;
+    width: 1030px;
+  }
+  margin-right: 10px;
+  margin-left: 10px;
+  img{
+    height: 100px;
+    margin-top: 10px;
+  }
+}

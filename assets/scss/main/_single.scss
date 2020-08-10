@@ -1,0 +1,83 @@
+.hero_single_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+  .hero_single_image {
+    @include min-screen(720px) {
+      height: 500px;
+      background-size: cover;
+    }
+    @include min-screen(1030px) {
+      height: 100vh;
+      background-size: cover;
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 400px;
+    background-size: contain;
+  }
+  .hero_single_text {
+    position: absolute;
+    align-self: center;
+    animation-name: hero_parallax_slide;
+    animation-duration: 1s;
+    color: $white-opacity;
+    text-shadow: $hero-shadow;
+    text-align: center;
+  }
+  h1 {
+    width: 300px;
+    font-size: 2rem;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    @include min-screen(720px) {
+      font-size: 4rem;
+      width: 600px;
+    }
+    @include min-screen(1030px) {
+      font-size: 6rem;
+      width: 900px;
+    }
+  }
+}
+
+.single_text_wrapper {
+  margin: 10px;
+  display: grid;
+  justify-content: center;
+}
+.single_text{
+  @include min-screen(500px) {
+    width: 400px;
+  }
+  @include min-screen(720px){
+    width: 700px;
+  }
+  @include min-screen(1080px) {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-right: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid $underline;
+  width: 300px;
+  a{
+    color: $logo-color;
+  }
+  a:hover{
+    color: $black;
+  }
+}
+.wp-caption {
+  width: 100% !important;
+  height: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

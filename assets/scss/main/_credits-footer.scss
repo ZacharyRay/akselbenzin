@@ -1,0 +1,47 @@
+.credit{
+  background-color: $dark-green;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.credit_flex{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 50px;
+  justify-content: space-between;
+  @include min-screen(1080px){
+    height: 13px;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.menu-privatpolitik-container{
+  ul{
+    padding-inline-start: 0px;
+  }
+}
+
+.copyright p{
+  color: $image_slider;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+}
+.menu-item-887 a{
+  color: $white;
+  text-decoration: none;
+  font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+}
+.menu-item-887 a:hover{
+  color: $grey;
+}
+#menu-privatpolitik {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

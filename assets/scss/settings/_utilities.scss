@@ -1,0 +1,35 @@
+.be_gone{
+  display: none !important;
+}
+.be_gone_mobile{
+  display: none !important;
+  @include max-screen(1080px){
+    display: block !important;
+  }
+}
+
+.reveal{
+  display: none !important;
+  @include min-screen(1080px){
+    display: block !important;
+    animation-name: fade_in;
+    animation-duration: 2s;
+  }
+}
+.reveal_mobile{
+  display: block !important;
+  @include min-screen(720px){
+    animation-name: fade_in;
+    animation-duration: 2s;
+  }
+}
+.add_top{
+  margin-top: 0px;
+  @include min-screen(1080px){
+    margin-top: 164px !important;
+  }
+
+}
+.no_top{
+  margin-top: 0px !important;
+}

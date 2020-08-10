@@ -1,0 +1,35 @@
+// Import settings (fonts, media queries, mixins etc.)
+@import "settings/media-queries";
+@import "settings/colors";
+@import "settings/buttons";
+@import "settings/animations";
+@import "settings/fonts";
+@import "settings/utilities";
+// Import main files
+@import "main/body";
+@import "main/header";
+@import "main/product-footer";
+@import "main/mobile-header";
+@import "main/pulse-footer";
+@import "main/so-me-footer";
+@import "main/single";
+
+// Import elements
+@import "acf-elements/acf-hero";
+@import "acf-elements/acf-content-posts";
+@import "acf-elements/acf-four-column-block";
+@import "acf-elements/acf-slider";
+@import "main/credits-footer";
+@import "acf-elements/acf-modal_news";
+@import "acf-elements/acf-product-head";
+
+//Import post type templates
+@import "posttype-templates/product-page";
+@import "posttype-templates/employees";
+
+//import page templates
+@import "page-templates/information-page-template";
+@import "page-templates/contact-page-template";
+@import "page-templates/all-products-page-template";
+@import "page-templates/environment-page-template";
+@import "page-templates/powerscreen-page-template";

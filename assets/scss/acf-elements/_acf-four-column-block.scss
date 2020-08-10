@@ -1,0 +1,31 @@
+.service_wrapper {
+  width: 100%;
+  display: grid;
+  font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  margin-top: 50px;
+  color: $dark-green-text;
+  h5 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid $service-line;
+  }
+}
+
+.services_grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(4, 160px);
+  margin-bottom: 60px;
+  margin: 10px;
+  @include min-screen(1080px) {
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+}
+

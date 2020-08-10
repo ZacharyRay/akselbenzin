@@ -1,0 +1,105 @@
+/* google maps */
+.google_maps_wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+.contact_text_wrap {
+  position: absolute;
+  align-self: flex-end;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  margin: -70px;
+  padding: 20px;
+  p{
+    margin-block-start: 0em;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a{
+    color: $logo-color;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a:hover {
+    color: $black;
+  }
+}
+/* Addresses */
+.address_wrapper {
+  width: 100%;
+  display: grid;
+  font-family: 'Roboto Condensed', Georgia, sans-serif;
+  margin-top: 50px;
+  color: $black;
+  h5 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid $underline;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a{
+    color: $logo-color;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a:hover{
+    color: $black;
+  }
+}
+.address_grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(3, 220px);
+  margin-bottom: 60px;
+  margin: 10px;
+  @include min-screen(1080px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid $underline;
+  }
+}
+.address_one, .address_two, .address_three {
+  padding-bottom: 20px;
+}
+/* Contact people */
+.contact_employees {
+  @include min-screen(720px){
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  @include min-screen(1080px){
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  img{
+    height: 150px;
+    border-radius: 99px;
+  }
+  h5{
+    color: $dark-green-text;
+    margin-block-start: 0em;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a{
+    color: $logo-color;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  .contact_person{
+    @include min-screen(720px){
+      margin-top: 0px;
+      justify-self: center;
+    }
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+}

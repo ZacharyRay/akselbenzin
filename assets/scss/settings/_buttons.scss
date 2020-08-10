@@ -1,0 +1,14 @@
+@mixin red-button {
+  color: $button_red;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: .08px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  width: 128px;
+  border: none;
+  white-space: nowrap;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 0;
+};

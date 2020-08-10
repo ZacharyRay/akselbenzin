@@ -1,0 +1,133 @@
+.pulse_wrapper {
+  margin-top: 180px;
+}
+.pulse_text_wrapper {
+  h1{
+    font-size: 2rem ;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  @include min-screen(720px) {
+    flex-direction: column;
+    h1{
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      font-size: 6rem;
+    }
+  }
+  @include min-screen(1080px) {
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  p {
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  .pulse_the_content {
+    p{
+      font-size: 2rem;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-bottom: 0.6em;
+      font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+    }
+    @include min-screen(720px){
+      width: 600px;
+    }
+  }
+}
+.pulse_content_wrap{
+  @include min-screen(720px) {
+    display: flex;
+    flex-direction: row;
+  }
+  .few_details {
+    align-self: flex-start;
+  }
+}
+.few_details{
+  p{
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-top: 10px;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+}
+
+.pulse_image_wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  height: 100%;
+  width: 100%;
+  .powerscreen_logo {
+    @include min-screen(720px) {
+      grid-column: 1 / 1;
+      grid-row: 2 / 3;
+    }
+    @include min-screen(1080px) {
+      width: 1030px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 90px;
+  }
+  .imac_image {
+    @include min-screen(720px) {
+      margin-bottom: 75px;
+    }
+    @include min-screen(1080px) {
+      width: 1030px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 270px;
+    z-index: 999;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+  }
+  .green_img_bg {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.pulse_footer {
+  background-color: $powerpulse-green;
+  padding-bottom: 50px;
+  ul {
+    padding-inline-start: 18px;
+  }
+  .pulse_details_wrapper {
+    @include min-screen(720px){
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+    }
+    @include min-screen(1080px){
+      width: 1030px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

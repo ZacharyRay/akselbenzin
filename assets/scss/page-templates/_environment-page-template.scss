@@ -1,0 +1,87 @@
+.env_product_wrap{
+  background-color: $env-dark-green;
+  color: $white;
+}
+.env_product_single_grid{
+  @include min-screen(720px){
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  @include min-screen(1080px){
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.env_product_images{
+  @include min-screen(720px){
+    margin-right: 20px;
+  }
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
+}
+
+.env_product_one_text_wrap{
+  h3{
+    border-top: 1px solid $white;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-block-start: 10px;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  ul{
+    margin-block-start: 0em;
+    margin-block-end: 20px;
+    padding-inline-start: 20px;
+  }
+}
+
+/* environment information banner */
+
+.env_info_wrap{
+  background-color: $env-banner;
+  margin-top: 10px;
+}
+
+.env_info{
+  @include min-screen(720px){
+    grid-template-rows: 1fr;
+    grid-template-columns: 200px auto;
+  }
+  @include min-screen(1080px){
+    width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 20px;
+  padding-top: 20px;
+    .product_env_text{
+    @include min-screen(720px){
+     align-self: center;
+    }
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $env-dark-green;
+ }
+}
+.env_image{
+  @include min-screen(720px){
+    height: 80px;
+  }
+  background-image: url("http://localhost:8888/akselbenzindk/wp-content/uploads/2020/01/Benzin_stander.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  background-size: contain;
+  position: relative;
+}
+

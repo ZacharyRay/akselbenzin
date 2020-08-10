@@ -1,0 +1,81 @@
+.hero_wrapper {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  @include min-screen(1080px){
+    //margin-top: 88px;
+  }
+
+  .hero_image {
+    background-repeat: no-repeat;
+    height: 665px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .clip_overlay {
+    background-image: url("http://staging-akselbenzindk.kinsta.cloud/wp-content/uploads/2020/01/hjoerne.svg");
+    background-repeat: no-repeat;
+    height: 665px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .hero_content {
+    @include min-screen(720px){
+      // top: 35vh;
+    }
+    position: absolute;
+    align-self: center;
+  }
+
+  h1 {
+    @include min-screen(720px){
+      font-size: 3rem;
+    }
+    @include min-screen(1080px){
+      font-size: 5rem;
+    }
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 4px 5px 10px rgba(0,0,0,.5);
+    text-transform: uppercase!important;
+    letter-spacing: -.7px;
+    line-height: 103px;
+    margin: 0;
+
+
+  }
+  h2 {
+    @include min-screen(720pc){
+      font-size: 2rem;
+    }
+    @include min-screen(1080px) {
+      font-size: 3rem;
+    }
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-shadow: 4px 5px 10px rgba(0,0,0,.5);
+    margin: 10px 10px 30px 10px;
+  }
+
+  .hero_button {
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    background-color: $hero-button;
+    font-size: 20px;
+    color: $white;
+    box-shadow: 3px 1px 23px $button-shadow;
+    align-self: center;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: $button-hover-red;
+  }
+}

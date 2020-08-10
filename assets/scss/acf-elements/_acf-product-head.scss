@@ -1,0 +1,16 @@
+.head_wrapper{
+  @include min-screen(720px){
+    margin-top: 10px;
+  }
+  @include min-screen(1080px){
+    width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-top: 150px;
+  margin-right: 10px;
+  margin-left: 10px;
+  h1{
+    color: $dark-green-text;
+  }
+}

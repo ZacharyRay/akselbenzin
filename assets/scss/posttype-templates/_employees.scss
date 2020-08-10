@@ -1,0 +1,40 @@
+/* Employee */
+.employee {
+  @include min-screen(720px){
+    display: grid;
+    grid-template-columns: 15% 20% 37%;
+  }
+  @include min-screen(1080px){
+    width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $underline;
+  margin-top: 20px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  img{
+    height: 150px;
+    border-radius: 99px;
+  }
+  h5{
+    color: $dark-green-text;
+    margin-block-start: 0em;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  a{
+    color: $logo-color;
+    font-family: $main-font, 'Roboto Condensed', Georgia, sans-serif;
+  }
+  .person{
+    @include min-screen(720px){
+      margin-top: 0px;
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

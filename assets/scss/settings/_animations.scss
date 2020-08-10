@@ -1,0 +1,21 @@
+//single keyframes
+
+@keyframes hero_parallax_slide {
+  0% {
+    transform: translateY(-600%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+// Menu
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 9;
+  }
+}
